@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/common.css?v=20261022_rev3">
+  <link rel="stylesheet" href="css/ninnkyaku.css?v=20261022_rev3">
+  <title>【 ○人○脚 】 | RE:CREATION</title>
+  
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="js/components.js?v=20261022_rev3"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script src="js/match-schedule-data.js?v=20261114"></script>
+  <script src="js/match-schedule.js?v=20261114_rev3" defer></script>
+</head>
+
+<body class="bg-uroko-cyan">
+
+<div id="container">
+
+    <site-header></site-header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+      <a href="index.html">ホーム</a>
+      <span class="sep">/</span>
+      <span class="current">【 ○人○脚 】</span>
+    </div>
+
+    <main class="main ninnkyaku-main">
+
+      <div class="ninnkyaku-title ">
+        <div class="page-symbol-badge">
+          <div class="symbol-pod">
+            <img src="images/trophy-white.png" alt="" class="symbol-img">
+          </div>
+        </div>
+        <h2>【 ○人○脚 】</h2>
+        <h4>開催時間：【 10:30～ 】<br></h4>
+      </div>
+
+      <figure class="ninnkyaku-img competition-img-placeholder">
+        <p>競技ルールの簡易画像は現在作成中です。</p>
+      </figure>
+
+      <div class="syuugou-title">
+        <h3>
+          集合場所
+        </h3>
+      </div>
+
+      <div class="cs-placeholder-card" style="margin-bottom: 3.5rem;">
+        <div class="cs-icon-pod">
+          <i data-lucide="map-pin"></i>
+        </div>
+        <h4 class="cs-title">MEETING POINT - 現在準備中</h4>
+        <p class="cs-desc">金城ふ頭特設アリーナ内の競技コートおよび集合待機場所は、現在実行委員会にて最終調整中です。確定次第公開いたします。</p>
+        <span class="cs-badge">STATUS: COMING SOON</span>
+      </div>
+
+      <div class="kyougiShousai-title">
+        <h3>
+          競技詳細
+        </h3>
+      </div>
+
+      <div class="kyougiShousai-container">
+
+        <div class="tunahiki-summary">
+          <h3 class="kyougiSdhousai-cont-text tunahiki-summary-title">概要</h3>
+          <h4 class="kyougiSdhousai-cont-text">
+            1チーム12名による団体競技。<br>
+            片道15ｍのコースをそれぞれのグループが走りタイムを競う。</h4>
+        </div>
+
+
+        <div class="leagueTable-link" data-match-schedule="ninnkyaku">
+          <div class="league-title">
+            <h3>
+              対戦表
+            </h3>
+            <div class="match-schedule">
+              <canvas class="match-schedule-canvas" aria-label="○人○脚対戦表"></canvas>
+              <p class="match-schedule-status" role="status">対戦表を読み込んでいます。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="ninnkyaku-NoP">
+          <h3 class="kyougiSdhousai-cont-text ninnkyou-NoP-title">
+            競技人数
+          </h3>
+          <h4 class="kyougiShousai-cont-text">
+            1チームにつき走者は12名<br>
+            &emsp;・同一人物が出走できるのは、原則1回限り<br>
+            &emsp;・各グループは、4人組・3人組・2人組・2人組・1人の5グループに分かれる。
+          </h4>
+        </div>
+
+        <div class="detaile">
+          <h3 class="kyougiSdhousai-cont-text detaile-title">
+            内容
+          </h3>
+          <ul>
+            <li>
+              ・1戦：5分 × 6回（10クラス × 6回）<br>
+              ・出走順は、4人組 → 3人組 → 2人組 → 2人組 → 1人の固定順<br>
+              ・<span class="competition-important">同一人物が出走できるのは、原則1回限り</span><br>
+              ・<span class="competition-important">アンカーグループはビブスを着用する</span><br>
+              ・計12名が走り終えた時点で競技終了とする
+            </li>
+          </ul>
+        </div>
+
+        <div class="gameRule">
+          <h3 class="kyougiSdhousai-cont-text gameRule-title">
+            ルール
+          </h3>
+          <ol>
+            <li>
+              1.グループ分け
+              <ul>
+                <li>・各グループは、4人組・3人組・2人組・2人組・1人の5グループで編成する</li>
+                <li>
+                  ・出走順は以下の固定順とする
+                  <ul>
+                    <li>
+                      1走目：4人組<br>
+                      2走目：3人組<br>
+                      3走目：2人組<br>
+                      4走目：2人組<br>
+                      5走目：1人
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="gameRule-nagare">
+              <br>2.競技終了条件
+              <ul>
+                <li>・１走目, 2走目...と順に走り計12名が走り終えた時点でゴールとする</li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+
+
+        <div class="attention">
+          <h3 class="kyougiSdhousai-cont-text attention-title">
+            失格事項
+          </h3>
+          <ol>
+            <li>
+              1.走行・時間に関する違反
+              <ul>
+                <li>・<span class="competition-highlight">メンバーが集まらず、競技を開始できない場合</span></li>
+                <li>・他の参加者への過度な妨害があった場合</li>
+              </ul>
+            </li>
+            <li>
+              2.装備に関する違反
+              <ul>
+                <li>・試合中にはちまきが破れた場合</li>
+                <li>・試合中にはちまきが解けた場合</li>
+              </ul>
+            </li>
+            <br>
+            <li>
+              <span class="competition-highlight">その他、試合の続行が不可能と判断された場合</span>
+            </li>
+          </ol>
+
+
+        </div>
+
+        <div class="point">
+          <h3 class="kyougiSdhousai-cont-text point-title">
+            得点
+          </h3>
+          <ul class="point-rank">
+            <li>・1位：100P</li>
+            <li>・2位：90P</li>
+            <li>・3位：80P</li>
+            <li>・4位：70P</li>
+            <li>・5位：60P</li>
+            <li>・6位：50P</li>
+            <li>・7位：40P</li>
+            <li>・8位：30P</li>
+            <li>・9位：20P</li>
+            <li>・10位：10P</li>
+            <li class="last-margin">※失格：0P</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="btn-container">
+        <a class="back-link" href="kyougi.html">
+          <div class="back-btn">
+            <div class="triangle"></div>
+            <h4 class="back-btn-text">
+              競技一覧へ
+            </h4>
+          </div>
+        </a>
+      </div>
+
+    </main>
+
+    <!-- //0919時点での変更点ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー -->
+
+    <site-footer></site-footer>
+
+  </div> <!--container-->
+
+  <script>if(window.lucide){lucide.createIcons();}</script>
+  <script src="js/jQuery-v3.7.1.js?v=20261022_rev3"></script>
+  <script src="js/script.js?v=20261022_rev3"></script>
+</body>
+
+<!-- <script src="js/jQuery-v3.7.1.js?v=20261022_rev3"></script> -->
+<script src="js/script.js?v=20261022_rev3"></script>
+
+
+</html>

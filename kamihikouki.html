@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/common.css?v=20261022_rev3">
+  <link rel="stylesheet" href="css/kamihikouki.css?v=20261022_rev3">
+  <title>紙飛行機飛ばし | RE:CREATION</title>
+  
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="js/components.js?v=20261022_rev3"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script src="js/match-schedule-data.js?v=20261114"></script>
+  <script src="js/match-schedule.js?v=20261114_rev3" defer></script>
+</head>
+
+<body class="bg-uroko-cyan">
+
+<div id="container">
+
+    <site-header></site-header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+      <a href="index.html">ホーム</a>
+      <span class="sep">/</span>
+      <span class="current">紙飛行機飛ばし</span>
+    </div>
+
+
+    <main class="main kamihikouki-main">
+
+      <div class="kamihikouki-title ">
+        <div class="page-symbol-badge">
+          <div class="symbol-pod">
+            <img src="images/trophy-white.png" alt="" class="symbol-img">
+          </div>
+        </div>
+        <h2>【 紙飛行機飛ばし 】</h2>
+        <h4>開催時間：【 14:00～ 】<br></h4>
+      </div>
+
+      <figure class="kamihikouki-img competition-img-placeholder">
+        <p>競技ルールの簡易画像は現在作成中です。</p>
+      </figure>
+
+      <div class="syuugou-title">
+        <h3>
+          集合場所
+        </h3>
+      </div>
+
+      <div class="cs-placeholder-card" style="margin-bottom: 3.5rem;">
+        <div class="cs-icon-pod">
+          <i data-lucide="map-pin"></i>
+        </div>
+        <h4 class="cs-title">MEETING POINT - 現在準備中</h4>
+        <p class="cs-desc">金城ふ頭特設アリーナ内の競技コートおよび集合待機場所は、現在実行委員会にて最終調整中です。確定次第公開いたします。</p>
+        <span class="cs-badge">STATUS: COMING SOON</span>
+      </div>
+
+      <div class="kyougiShousai-title">
+        <h3>
+          競技詳細
+        </h3>
+      </div>
+
+      <div class="kyougiShousai-container">
+
+        <div class="tunahiki-summary">
+          <h3 class="kyougiSdhousai-cont-text tunahiki-summary-title">
+            概要
+          </h3>
+          <h4 class="kyougiSdhousai-cont-text">
+            ライン手前の好きな場所へ移動し、事前に制作した紙飛行機を飛ばして飛距離を競う競技。<br>
+            遠くまで飛んだ上位5名にポイントを与える。
+          </h4>
+        </div>
+
+        <div class="leagueTable-link" data-match-schedule="kamihikouki">
+          <div class="league-title">
+            <h3>
+              対戦表
+            </h3>
+            <div class="match-schedule">
+              <canvas class="match-schedule-canvas" aria-label="紙飛行機飛ばし対戦表"></canvas>
+              <p class="match-schedule-status" role="status">対戦表を読み込んでいます。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="kamihikouki-NoP">
+          <h3 class="kyougiSdhousai-cont-text kamihikouki-NoP-title">
+            競技人数
+          </h3>
+          <h4 class="kyougiShousai-cont-text">
+            1チームの競技者全員が、同時に紙飛行機を投げる。
+          </h4>
+        </div>
+
+        <div class="detaile">
+          <h3 class="kyougiSdhousai-cont-text detaile-title">
+            内容
+          </h3>
+          <ul>
+            <li>
+              ・ライン手前の好きな場所へ移動し、紙飛行機を飛ばす
+            </li>
+            <li>
+              ・制作してきたオリジナル紙飛行機を使用する
+            </li>
+            <li>
+              ・飛距離は測定せず、投擲ラインから最も遠くへ飛んだ紙飛行機から順位を決める
+            </li>
+            <li>
+              ・遠くまで飛んだ上位5名にポイントを与える
+            </li>
+            <li>
+              ・投げ終えた参加者はコート内に入らず退場する
+            </li>
+          </ul>
+        </div>
+
+        <div class="gameRule">
+          <h3 class="kyougiSdhousai-cont-text gameRule-title">
+            ルール
+          </h3>
+          <ul>
+            <li>
+              ・紙飛行機はレク本番の数日前に、担任から専用の用紙を配布する
+            </li>
+            <li>
+              ・<span class="competition-important">配布された用紙を使用し、原則自宅で制作して当日持参する</span>
+            </li>
+            <li>
+              ・紙飛行機には、見えやすい箇所にクラス記号と氏名を記入する
+            </li>
+            <li>
+              ・のりづけやテープによる貼り付け加工は禁止する
+            </li>
+            <li>
+              ・ハサミで切るなどの軽量化は認める
+            </li>
+            <li>
+              ・1チームで一度に全員が投げる
+            </li>
+            <li>・投げ終えた紙飛行機は回収後、返却しない</li>
+          </ul>
+          <figure class="kamihikouki-kinyuu"></figure>
+        </div>
+
+        <div class="attention">
+          <h3 class="kyougiSdhousai-cont-text attention-title">
+            失格事項
+          </h3>
+          <ul>
+            <li>・<span class="competition-highlight">集合整列に揃わなかった場合</span></li>
+            <li>・<span class="competition-highlight">事前配布した用紙を使用した紙飛行機を用意できなかった場合</span></li>
+            <li>・紙飛行機を丸めて投げた場合</li>
+            <li>・クラス記号または氏名が無記入の場合</li>
+            <li>・<span class="competition-highlight">制限時間内に飛ばさなかった場合（ホイッスル後30秒経過で失格）</span></li>
+            <li>・<span class="competition-highlight">紙飛行機を飛ばす際に、足がラインを超えた場合</span></li>
+            <li>・<span class="competition-highlight">手以外の道具を用いて飛ばした場合</span></li>
+          </ul>
+        </div>
+
+        <div class="point">
+          <h3 class="kyougiSdhousai-cont-text point-title">
+            得点
+          </h3>
+          <ul>
+            <li>・1位：50P</li>
+            <li>・2位：40P</li>
+            <li>・3位：30P</li>
+            <li>・4位：20P</li>
+            <li>・5位：10P</li>
+            <li>・<span class="competition-important">6位以下：得点なし</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="btn-container">
+        <a class="back-link" href="kyougi.html">
+          <div class="back-btn">
+            <div class="triangle"></div>
+            <h4 class="back-btn-text">
+              競技一覧へ
+            </h4>
+          </div>
+        </a>
+      </div>
+
+    </main>
+    <site-footer></site-footer>
+
+  </div> <!--container-->
+
+  <script>if(window.lucide){lucide.createIcons();}</script>
+  <script src="js/jQuery-v3.7.1.js?v=20261022_rev3"></script>
+  <script src="js/script.js?v=20261022_rev3"></script>
+</body>
+
+<!-- <script src="js/jQuery-v3.7.1.js?v=20261022_rev3"></script> -->
+<script src="js/script.js?v=20261022_rev3"></script>
+
+</html>

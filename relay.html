@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/common.css?v=20261022_rev3">
+  <link rel="stylesheet" href="css/relay.css?v=20261022_rev3">
+  <title>学科別対抗リレー | RE:CREATION</title>
+  
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="js/components.js?v=20261022_rev3"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script src="js/match-schedule-data.js?v=20261114"></script>
+  <script src="js/match-schedule.js?v=20261114_rev3" defer></script>
+</head>
+
+<body class="bg-uroko-cyan">
+
+<div id="container">
+
+    <site-header></site-header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+      <a href="index.html">ホーム</a>
+      <span class="sep">/</span>
+      <span class="current">学科別対抗リレー</span>
+    </div>
+
+
+    <main class="main relay-main">
+
+      <div class="relay-title ">
+        <div class="page-symbol-badge">
+          <div class="symbol-pod">
+            <img src="images/pictogram_white.png" alt="" class="symbol-img">
+          </div>
+        </div>
+        <h2>【 学科別対抗リレー 】</h2>
+        <h4>開催時間：【 15:00～ 】<br></h4>
+      </div>
+
+      <figure class="relay-img competition-img-placeholder">
+        <p>競技ルールの簡易画像は現在作成中です。</p>
+      </figure>
+
+      <div class="syuugou-title">
+        <h3>
+          集合場所
+        </h3>
+      </div>
+
+      <div class="cs-placeholder-card" style="margin-bottom: 3.5rem;">
+        <div class="cs-icon-pod">
+          <i data-lucide="map-pin"></i>
+        </div>
+        <h4 class="cs-title">MEETING POINT - 現在準備中</h4>
+        <p class="cs-desc">金城ふ頭特設アリーナ内の競技コートおよび集合待機場所は、現在実行委員会にて最終調整中です。確定次第公開いたします。</p>
+        <span class="cs-badge">STATUS: COMING SOON</span>
+      </div>
+
+      <div class="kyougiShousai-title">
+        <h3>
+          競技詳細
+        </h3>
+      </div>
+
+      <div class="kyougiShousai-container">
+
+        <div class="tunahiki-summary">
+          <h3 class="kyougiSdhousai-cont-text tunahiki-summary-title">
+            概要
+          </h3>
+          <h4 class="kyougiSdhousai-cont-text">
+            各学科の代表学生16名がA・Bの2チームに分かれて行うリレー競技。<br>
+            1人が片道40mを2回走り、2レースの順位ポイント合計が少ない順に最終順位を決定する。
+          </h4>
+        </div>
+
+        <div class="leagueTable-link" data-match-schedule="relay">
+          <div class="league-title">
+            <h3>
+              対戦表
+            </h3>
+            <div class="match-schedule">
+              <canvas class="match-schedule-canvas" aria-label="学科別対抗リレー対戦表"></canvas>
+              <p class="match-schedule-status" role="status">対戦表を読み込んでいます。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="relay-NoP">
+          <h3 class="kyougiSdhousai-cont-text relay-NoP-title">
+            競技人数
+          </h3>
+          <h4 class="kyougiShousai-cont-text">
+            各学科代表学生16名。8名ずつAチーム・Bチームに分かれる。<br>
+            ・1レース：Aチーム（8名）<br>
+            ・2レース：Bチーム（8名）<br>
+            <br>
+            ・[AT]：赤チーム<br>
+            ・[CG]：ピンクチーム<br>
+            ・[AD/AP/GP]：白チーム<br>
+            ・[IT/IA/IH/PI/PW]：黄チーム<br>
+            ・[DG/DA/CI/CA/CT]：青チーム<br>
+            ・[SE/SC/MC/MR/VD]：緑チーム&emsp;&emsp;&emsp;計6学科
+          </h4>
+        </div>
+
+        <div class="detaile">
+          <h3 class="kyougiSdhousai-cont-text detaile-title">
+            内容
+          </h3>
+          <ul>
+            <li>
+              ・1人が片道40mの直線コースを2回走る
+            </li>
+            <li>
+              ・各レースは8名で走り、AチームとBチームの合計2レースを行う
+            </li>
+            <li>
+              ・各走者は2回走るため、1レースあたりの走行距離は合計640m
+            </li>
+            <li>
+              ・<span class="competition-important">各レースの順位に応じて順位ポイントを付け、2レース分の合計が少ない順に最終順位を決める</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="gameRule">
+          <h3 class="kyougiSdhousai-cont-text gameRule-title">
+            ルール
+          </h3>
+          <ul>
+            <li>
+              ・走順は、<span class="relay-order">1→2→3→4→5→6→7→8→<wbr>2→3→4→5→6→7→8→1</span>とする
+            </li>
+            <li>
+              ・第一走者が1走目とアンカーを務める
+            </li>
+            <li>
+              ・チームカラーのはちまきを着用する
+            </li>
+            <li>
+              ・第一走者兼アンカーは、必ずビブスも着用する
+            </li>
+            <li>
+              ・<span class="competition-important">2人の走者が指定された交代エリア内にいる状態でバトンを受け渡す</span>
+            </li>
+            <li>
+              ・バトンは投げずに、手渡しで渡す
+            </li>
+          </ul>
+        </div>
+
+        <div class="attention">
+          <h3 class="kyougiSdhousai-cont-text attention-title">
+            失格事項
+          </h3>
+          <ul>
+            <li>・<span class="competition-highlight">トラックのラインを大幅にオーバーして走る行為</span></li>
+            <li>・<span class="competition-highlight">交代エリア外でバトンを受け渡す行為</span></li>
+            <li>・次の走者がスタートラインを超えた時点でバトンを受け渡す行為</li>
+            <li>・<span class="competition-highlight">多岐にわたってフライングする行為</span></li>
+          </ul>
+
+
+        </div>
+
+        <div class="point">
+          <h3 class="kyougiSdhousai-cont-text point-title">
+            得点
+          </h3>
+          <ul>
+            <li>・各レースの順位ポイント：1位1P、2位2P、3位3P…</li>
+            <li>・<span class="competition-important">2レース分の順位ポイント合計が少ない順に最終順位を決定する</span></li>
+            <li>・最終順位1位：100点</li>
+            <li>・最終順位2位：80点</li>
+            <li>・最終順位3位：60点</li>
+            <li>・最終順位4位：40点</li>
+            <li>・最終順位5位：20点</li>
+            <li>・最終順位6位：10点</li>
+            <li class="last-margin">・<span class="competition-important">獲得したポイントは、そのチームに属するすべてのクラスに付与する</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="btn-container">
+        <a class="back-link" href="kyougi.html">
+          <div class="back-btn">
+            <div class="triangle"></div>
+            <h4 class="back-btn-text">
+              競技一覧へ
+            </h4>
+          </div>
+        </a>
+      </div>
+
+    </main>
+
+
+    <site-footer></site-footer>
+
+  </div> <!--container-->
+
+  <script>if(window.lucide){lucide.createIcons();}</script>
+  <script src="js/jQuery-v3.7.1.js?v=20261022_rev3"></script>
+  <script src="js/script.js?v=20261022_rev3"></script>
+</body>
+
+<!-- <script src="js/jQuery-v3.7.1.js?v=20261022_rev3"></script> -->
+<script src="js/script.js?v=20261022_rev3"></script>
+
+
+</html>

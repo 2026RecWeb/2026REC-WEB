@@ -1,0 +1,201 @@
+@charset "utf-8";
+
+/* =========================================================
+   呼び出しアプリ専用スタイル (appli.css)
+   共通レイアウト・タイトル・枠線・ガイドラインは common.css に集約済み
+   ========================================================= */
+
+.center-link {
+  text-align: center;
+  margin: 2.5rem 0 1.5rem;
+}
+
+.event-guidelines {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.appli-main > section + section {
+  margin-top: 5rem;
+}
+
+.about-day {
+  padding: 2rem 2.5rem;
+  background: rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-left: 6px solid #FFA502;
+  border-radius: 18px;
+  box-shadow: 0 12px 35px rgba(5, 30, 48, 0.35);
+}
+
+.app-overview {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  text-align: left;
+}
+
+.app-overview-copy {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.about-day h3 {
+  color: #FFFFFF;
+  font-size: 1.45rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.about-day li {
+  color: #FFFFFF;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.about-day li p {
+  margin: 0 0 0.5rem;
+}
+
+.about-day li p:last-child {
+  margin-bottom: 0;
+}
+
+.app-image {
+  flex: 0 0 auto;
+  text-align: center;
+}
+
+.app-image img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  max-height: 520px;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(5, 30, 48, 0.35);
+}
+
+.app-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+.app-gallery-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  min-width: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.app-gallery-item figcaption {
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 800;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.app-gallery-item img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  object-fit: contain;
+  border-radius: 12px;
+  background: rgba(5, 30, 48, 0.45);
+  box-shadow: 0 6px 18px rgba(5, 30, 48, 0.35);
+}
+
+.url-color {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.1rem 2.5rem;
+  background: linear-gradient(135deg, #FFA502 0%, #FF6B4A 100%);
+  color: #FFFFFF !important;
+  font-weight: 900;
+  font-size: 1.25rem;
+  border-radius: 35px;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 8px 25px rgba(255, 165, 2, 0.5);
+  transition: all var(--trans-spring);
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+}
+
+.url-color:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 14px 35px rgba(255, 165, 2, 0.7);
+  filter: brightness(1.08);
+}
+
+@media screen and (min-width: 681px) {
+  .app-overview-section {
+    max-width: 1100px;
+  }
+
+  .app-overview li {
+    font-size: 1.17rem;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .about-day {
+    padding: 1.5rem 1.2rem;
+  }
+
+  .appli-main > section + section {
+    margin-top: 1.5rem;
+  }
+
+  .app-overview {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1.2rem;
+  }
+
+  .app-overview-copy {
+    width: 100%;
+  }
+
+  .about-day h3 {
+    font-size: 1.15rem;
+  }
+
+  .about-day li {
+    font-size: 0.92rem;
+  }
+
+  .app-image img {
+    max-height: 420px;
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+
+  .app-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    margin-top: 1.2rem;
+  }
+
+  .app-gallery-item {
+    gap: 0.4rem;
+  }
+
+  .app-gallery-item figcaption {
+    font-size: 0.82rem;
+  }
+
+  .url-color {
+    font-size: 1.05rem;
+    padding: 0.9rem 1.8rem;
+  }
+}

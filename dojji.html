@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/common.css?v=20261022_rev3">
+  <link rel="stylesheet" href="css/dojji.css?v=20261022_rev3">
+  <title>【 ロイヤルドッジ 】 | RE:CREATION</title>
+  
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="js/components.js?v=20261022_rev3"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script src="js/match-schedule-data.js?v=20261114"></script>
+  <script src="js/match-schedule.js?v=20261114_rev3" defer></script>
+</head>
+
+<body class="bg-uroko-cyan">
+
+<div id="container">
+
+    <site-header></site-header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+      <a href="index.html">ホーム</a>
+      <span class="sep">/</span>
+      <span class="current">【 ロイヤルドッジ 】</span>
+    </div>
+
+
+    <main class="main dojji-main">
+
+      <div class="dojji-title ">
+        <div class="page-symbol-badge">
+          <div class="symbol-pod">
+            <img src="images/trophy-white.png" alt="" class="symbol-img">
+          </div>
+        </div>
+        <h2>【 ロイヤルドッジ 】</h2>
+        <h4>開催時間：【 11:30～ 】<br></h4>
+      </div>
+
+      <figure class="dojji-img dojji-img-placeholder">
+        <p>競技ルールの簡易画像は現在作成中です。</p>
+      </figure>
+
+      <div class="syuugou-title">
+        <h3>
+          集合場所
+        </h3>
+      </div>
+
+      <div class="cs-placeholder-card" style="margin-bottom: 3.5rem;">
+        <div class="cs-icon-pod">
+          <i data-lucide="map-pin"></i>
+        </div>
+        <h4 class="cs-title">MEETING POINT - 現在準備中</h4>
+        <p class="cs-desc">競技の集合待機場所は、現在作成中です。</p>
+        <span class="cs-badge">STATUS: COMING SOON</span>
+      </div>
+
+      <div class="kyougiShousai-title">
+        <h3>
+          競技詳細
+        </h3>
+      </div>
+
+      <div class="kyougiShousai-container">
+
+        <div class="tunahiki-summary">
+          <h3 class="kyougiSdhousai-cont-text tunahiki-summary-title">
+            概要
+          </h3>
+          <h4 class="kyougiSdhousai-cont-text">
+            王様ドッジボールに近い形式のポイント制ドッジボール。<br>
+            複数チームの代表者がA・B・C・Dの4コートに分かれて対戦する。
+          </h4>
+        </div>
+
+        <div class="leagueTable-link" data-match-schedule="dojji">
+          <div class="league-title">
+            <h3>
+              対戦表
+            </h3>
+            <div class="match-schedule">
+              <canvas class="match-schedule-canvas" aria-label="ドッジボール対戦表"></canvas>
+              <p class="match-schedule-status" role="status">対戦表を読み込んでいます。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="dojji-NoP">
+          <h3 class="kyougiSdhousai-cont-text dojji-NoP-title">
+            競技人数
+          </h3>
+          <h4 class="kyougiShousai-cont-text">
+            各コート40名、20名対20名で対戦する。<br>
+            A・B・C・Dの各コートに、2チームまたは2クラスの代表者が参加する。<br>
+            各チームまたは各クラスから王を1名選出する。
+          </h4>
+        </div>
+
+        <div class="detaile">
+          <h3 class="kyougiSdhousai-cont-text detaile-title">
+            内容
+          </h3>
+          <ul>
+            <li>
+              ・アリーナの両コートで、審判の合図により同時に試合を開始する
+            </li>
+            <li>・試合時間は3分間とする</li>
+            <li>・1コートにつきボールを2個使用する</li>
+            <li>・開始時は1個のボールを使用し、開始1分経過後に2個目を投入する</li>
+            <li>
+              ・A・Bコートは<span class="competition-important">メインアリーナ</span>、
+              C・Dコートは<span class="competition-important">サブアリーナ</span>をそれぞれ半面使用する
+            </li>
+            <li>・A・B・C・Dの各コートで、20名対20名の試合を行う</li>
+            <li>・アリーナごとに試合状況がずれる可能性がある</li>
+          </ul>
+        </div>
+
+        <div class="gameRule">
+          <h3 class="kyougiSdhousai-cont-text gameRule-title">
+            ルール
+          </h3>
+          <ul>
+            <li>
+              ・形式：王様ドッジボール形式（当たったら退場）
+            </li>
+            <li>
+              ・開始方法：審判の合図で同時にスタートする
+            </li>
+            <li>
+              ・試合時間：3分
+            </li>
+            <li>
+              ・ボール数：1コート2個（開始時は1個、開始1分経過で2個目を投入）
+            </li>
+            <li>
+              ・<span class="competition-important">王は必ず1名選出し、ビブスを着用する</span>
+            </li>
+            <li><br>
+              ・試合終了時に生き残っていた王は10ポイント、兵は1ポイントを獲得する
+            </li>
+            <li>
+              ・王の性別などの内訳は各クラスで任意とする
+            </li>
+            <li><br>
+              ・アウト条件：ボールが体に当たり、ノーバウンドで落ちた場合はアウトとする
+            </li>
+            <li>
+              ・セーフ条件：ボールをキャッチした場合、頭に当たった場合はセーフとする
+            </li>
+            <li>
+              ・ノーバウンドで2人目に当たった選手はセーフとし、競技を続行する
+            </li>
+            <li><br>
+              ・<span class="competition-important">復活ルールは設けない</span>
+            </li>
+            <li>
+              ・<span class="competition-important">外野は設けない。アウトになった選手は相手チームのコート外へ出てボールひろいを行う</span>
+            </li>
+            <li>
+              ・試合終了後、各コートで生き残っている王とその他の人数を審判がカウントする
+            </li>
+          </ul>
+        </div>
+
+        <div class="attention">
+          <h3 class="kyougiSdhousai-cont-text attention-title">
+            禁止事項
+          </h3>
+          <ul>
+            <li>・<span class="competition-highlight">試合開始までに招集場所へ集まらないこと</span></li>
+            <li>・<span class="competition-highlight">審判の指示に故意に従わないこと</span></li>
+            <li>・<span class="competition-highlight">アウトになった選手が、再びコート内へ戻ること</span></li>
+          </ul>
+        </div>
+
+        <div class="point">
+          <h3 class="kyougiSdhousai-cont-text point-title">
+            得点
+          </h3>
+          <ul>
+            <li>・生き残った人数に応じて、各チームにポイントを加算する</li>
+            <li>・<span class="competition-important">王：10ポイント</span></li>
+            <li>・<span class="competition-important">兵：1ポイント</span></li>
+            <li>・<span class="competition-important">同時にプレイしていた8チームを、合計ポイントが高い順に順位付けする</span></li>
+            <li>・<span class="competition-important">順位点：1位100点、2位90点、3位80点、4位70点、5位60点、6位50点、7位40点、8位30点</span></li>
+            <li>・同ポイントの場合は同じ順位とし、直後の順位を飛ばす</li>
+            <li class="last-margin">・<span class="competition-important">最終試合の4チームは、1位・3位・5位・7位の得点を順に採用する</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="btn-container">
+        <a class="back-link" href="kyougi.html">
+          <div class="back-btn">
+            <div class="triangle"></div>
+            <h4 class="back-btn-text">
+              競技一覧へ
+            </h4>
+          </div>
+        </a>
+      </div>
+
+    </main>
+    <site-footer></site-footer>
+
+  </div> <!--container-->
+
+  <script>if(window.lucide){lucide.createIcons();}</script>
+  <script src="js/jQuery-v3.7.1.js?v=20261022_rev3"></script>
+  <script src="js/script.js?v=20261022_rev3"></script>
+</body>
+
+<!-- <script src="js/jQuery-v3.7.1.js?v=20261022_rev3"></script> -->
+<script src="js/script.js?v=20261022_rev3"></script>
+
+</html>
